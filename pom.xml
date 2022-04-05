@@ -11,11 +11,9 @@
 
     <modules>
         <module>bukkit</module>
-        <module>bungee</module>
-        <module>common</module>
     </modules>
 
-    <name>Template</name>
+    <name>CADisplay</name>
     <description></description>
 
     <developers>
@@ -28,6 +26,10 @@
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>cloudnet-releases</id>
+            <url>https://repo.cloudnetservice.eu/repository/releases/</url>
         </repository>
     </repositories>
 

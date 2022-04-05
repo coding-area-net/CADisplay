@@ -1,8 +1,13 @@
-mongodb:
-  # Will replace 'host', 'port', 'username' and 'password' with contents of yaml file at given path
-  file: /home/cloud/local/mongodb.yml
-  host: "192.168.0.5"
-  port: 27017
-  database: ""
-  username: ""
-  password: ""
+# Available placeholders:
+# %group%    - the name of the highest permission group of the player
+# %display%  - the display of the highest permission group of the player
+# %prefix%   - the prefix of the highest permission group of the player
+# %suffix%   - the prefix of the highest permission group of the player
+# %color%    - the color of the highest permission group of the player
+# %name%     - the name of the player
+# %uniqueId% - the uniqueIid of the player
+# %message%  - the message sent by the player
+
+# permission to use "&" in messages for color: cloudnet.chat.color
+
+format: "%display%%name% &8:&f %message%"

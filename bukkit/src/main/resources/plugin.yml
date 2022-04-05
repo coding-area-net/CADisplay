@@ -1,9 +1,10 @@
 name: ${project.name}
-version: ${project.version}#${git.commit.id.describe}
+version: ${project.version}
 description: ${project.description}
 
 api-version: "1.13"
 
 author: Coding-Area
 
-main: ${project.groupId}.${project.artifactId}.${project.name}Plugin
+# main: ${project.groupId}.${project.artifactId}.${project.name}Plugin
+main: ${project.groupId}.display.${project.name}Plugin
