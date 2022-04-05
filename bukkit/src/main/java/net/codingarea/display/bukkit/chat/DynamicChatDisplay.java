@@ -1,4 +1,4 @@
-package net.codingarea.display.chat;
+package net.codingarea.display.bukkit.chat;
 
 import org.bukkit.entity.Player;
 

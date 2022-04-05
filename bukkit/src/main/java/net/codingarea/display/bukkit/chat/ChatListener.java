@@ -1,9 +1,9 @@
-package net.codingarea.display.chat;
+package net.codingarea.display.bukkit.chat;
 
 import de.dytanic.cloudnet.driver.CloudNetDriver;
 import de.dytanic.cloudnet.driver.permission.IPermissionGroup;
 import de.dytanic.cloudnet.driver.permission.IPermissionUser;
-import net.codingarea.display.DisplayAPI;
+import net.codingarea.display.bukkit.DisplayAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;

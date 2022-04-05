@@ -1,4 +1,4 @@
-package net.codingarea.display.tab;
+package net.codingarea.display.bukkit.tab;
 
 import org.bukkit.entity.Player;
 

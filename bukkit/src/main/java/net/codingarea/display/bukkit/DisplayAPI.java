@@ -1,9 +1,9 @@
-package net.codingarea.display;
+package net.codingarea.display.bukkit;
 
-import net.codingarea.display.chat.IChatDisplay;
-import net.codingarea.display.chat.StaticChatDisplay;
-import net.codingarea.display.tab.CloudPermsTabDisplay;
-import net.codingarea.display.tab.ITabDisplay;
+import net.codingarea.display.bukkit.chat.IChatDisplay;
+import net.codingarea.display.bukkit.chat.StaticChatDisplay;
+import net.codingarea.display.bukkit.tab.CloudPermsTabDisplay;
+import net.codingarea.display.bukkit.tab.ITabDisplay;
 import org.jetbrains.annotations.Nullable;
 
 /**

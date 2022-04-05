@@ -1,4 +1,4 @@
-package net.codingarea.display.chat;
+package net.codingarea.display.bukkit.chat;
 
 import org.bukkit.entity.Player;
 
@@ -11,7 +11,7 @@ public class StaticChatDisplay implements IChatDisplay {
 	private final String format;
 
 	public StaticChatDisplay(String format) {
-		this.format = format != null ? format : "";
+		this.format = format;
 	}
 
 	@Override

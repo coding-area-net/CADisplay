@@ -1,4 +1,4 @@
-package net.codingarea.display.chat;
+package net.codingarea.display.bukkit.chat;
 
 import org.bukkit.entity.Player;
 
@@ -15,6 +15,4 @@ public interface IChatDisplay {
 
 	String getFormat(Player viewer, Player sender);
 
-
 }
-

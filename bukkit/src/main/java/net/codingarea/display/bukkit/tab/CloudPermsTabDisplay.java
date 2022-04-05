@@ -1,4 +1,4 @@
-package net.codingarea.display.tab;
+package net.codingarea.display.bukkit.tab;
 
 import de.dytanic.cloudnet.ext.cloudperms.bukkit.BukkitCloudNetCloudPermissionsPlugin;
 
@@ -32,12 +32,10 @@ public final class CloudPermsTabDisplay implements ITabDisplay {
 
 	@Override
 	public void onDeactivate() {
-		for (Player player : Bukkit.getOnlinePlayers()) {
+		Bukkit.getOnlinePlayers().forEach(player -> {
 			player.setDisplayName((player.getGameMode() == GameMode.SPECTATOR ? "§7" : "") + player.getName());
-			for (Team team : new ArrayList<>(player.getScoreboard().getTeams())) {
-				team.unregister();
-			}
-		}
+			new ArrayList<>(player.getScoreboard().getTeams()).forEach(Team::unregister);
+		});
 	}
 
 }

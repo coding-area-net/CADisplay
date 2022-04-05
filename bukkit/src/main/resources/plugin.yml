@@ -6,5 +6,4 @@ api-version: "1.13"
 
 author: Coding-Area
 
-# main: ${project.groupId}.${project.artifactId}.${project.name}Plugin
-main: ${project.groupId}.display.${project.name}Plugin
+main: ${project.groupId}.${project.artifactId}.${project.name}Plugin

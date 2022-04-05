@@ -1,11 +1,11 @@
-package net.codingarea.display.tab;
+package net.codingarea.display.bukkit.tab;
 
 import de.dytanic.cloudnet.driver.CloudNetDriver;
 import de.dytanic.cloudnet.driver.event.EventListener;
 import de.dytanic.cloudnet.driver.event.events.permission.PermissionUpdateGroupEvent;
 import de.dytanic.cloudnet.driver.event.events.permission.PermissionUpdateUserEvent;
 import de.dytanic.cloudnet.driver.permission.IPermissionUser;
-import net.codingarea.display.DisplayAPI;
+import net.codingarea.display.bukkit.DisplayAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

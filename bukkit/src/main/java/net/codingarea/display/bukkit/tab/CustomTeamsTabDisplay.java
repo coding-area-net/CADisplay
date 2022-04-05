@@ -1,4 +1,4 @@
-package net.codingarea.display.tab;
+package net.codingarea.display.bukkit.tab;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -30,21 +30,6 @@ public class CustomTeamsTabDisplay implements ITabDisplay {
 
 	@Override
 	public void onUpdate(@NotNull Player player) {
-		handleTabUpdate(player);
-	}
-
-	@Override
-	public void onDeactivate() {
-		for (Player player : Bukkit.getOnlinePlayers()) {
-			player.setDisplayName((player.getGameMode() == GameMode.SPECTATOR ? "§7" : "") + player.getName());
-			for (Team team : new ArrayList<>(player.getScoreboard().getTeams())) {
-				team.unregister();
-			}
-		}
-	}
-
-	private void handleTabUpdate(Player player) {
-
 		for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
 			Scoreboard scoreboard = onlinePlayer.getScoreboard();
 			Team team = scoreboard.getEntryTeam(player.getName());
@@ -60,15 +45,23 @@ public class CustomTeamsTabDisplay implements ITabDisplay {
 		TabEntry properties = propertiesFunction.apply(player);
 		player.setDisplayName(ChatColor.translateAlternateColorCodes('&', properties.getDisplay() + player.getName()));
 
-		for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
+		Bukkit.getOnlinePlayers().forEach(player1 -> {
+			TabEntry properties1 = propertiesFunction.apply(player1);
 
-			properties = propertiesFunction.apply(onlinePlayer);
+			Bukkit.getOnlinePlayers().forEach(player2 -> {
+				Team team = createTeam(properties1, player2.getScoreboard());
+				team.addEntry(player1.getName());
+			});
 
-			for (Player onlinePlayer2 : Bukkit.getOnlinePlayers()) {
-				Team team = createTeam(properties, onlinePlayer2.getScoreboard());
-				team.addEntry(onlinePlayer.getName());
-			}
-		}
+		});
+	}
+
+	@Override
+	public void onDeactivate() {
+		Bukkit.getOnlinePlayers().forEach(player -> {
+			player.setDisplayName((player.getGameMode() == GameMode.SPECTATOR ? "§7" : "") + player.getName());
+			new ArrayList<>(player.getScoreboard().getTeams()).forEach(Team::unregister);
+		});
 	}
 
 	protected Team createTeam(TabEntry properties, Scoreboard scoreboard) {
@@ -99,11 +92,12 @@ public class CustomTeamsTabDisplay implements ITabDisplay {
 				}
 			} else if (prefix != null && !prefix.isEmpty()) {
 				color = ChatColor.getLastColors(prefix.replace('&', '§'));
-				if (!color.isEmpty()) {
-					ChatColor chatColor = ChatColor.getByChar(color.replaceAll("&", "").replaceAll("§", ""));
-					if (chatColor != null) {
-						method.invoke(team, chatColor);
-					}
+				if (color.isEmpty()) {
+					return;
+				}
+				ChatColor chatColor = ChatColor.getByChar(color.replaceAll("&", "").replaceAll("§", ""));
+				if (chatColor != null) {
+					method.invoke(team, chatColor);
 				}
 			}
 		} catch (NoSuchMethodException ignored) {
