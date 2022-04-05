@@ -8,13 +8,13 @@
   "sources": [
     {
       "type": "file",
-      "path": "bukkit/src/main/java/net/codingarea/display/tab/CustomTeamsTabDisplay.java",
+      "path": "bukkit/src/main/java/net/codingarea/display/bukkit/tab/CustomTeamsTabDisplay.java",
       "language": "JAVA",
-      "line": 111,
+      "line": 105,
       "offset": 14,
       "length": 15,
       "code": {
-        "startLine": 109,
+        "startLine": 103,
         "length": 15,
         "offset": 132,
         "surroundingCode": "\t\t} catch (NoSuchMethodException ignored) {\n\t\t} catch (IllegalAccessException | InvocationTargetException exception) {\n\t\t\texception.printStackTrace();\n\t\t}\n\t}"
@@ -25,7 +25,7 @@
     "module": "bukkit",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "67d95c193269b1a553f66ffc17ff13cfb4c5118b301b99efae36c95595f65071"
+  "hash": "40b40f99f351a6f9fa1fd6294369a843124e0a7de9021e3891da7db24bb89957"
 },{
   "tool": "Code Inspection",
   "category": "Assignment issues",
@@ -36,7 +36,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "bukkit/src/main/java/net/codingarea/display/DisplayAPI.java",
+      "path": "bukkit/src/main/java/net/codingarea/display/bukkit/DisplayAPI.java",
       "language": "JAVA",
       "line": 21,
       "offset": 3,
@@ -53,5 +53,5 @@
     "module": "bukkit",
     "inspectionName": "AssignmentToStaticFieldFromInstanceMethod"
   },
-  "hash": "34d820a3a427ab976911e6a10e72d710921fae68976fbb512efc12ecd98767c8"
+  "hash": "d4d38f7293b5547ec1177ca8e3cd274da14bb473b99d787d529309af36fc7f84"
 }]}
