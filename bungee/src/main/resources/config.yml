@@ -1,8 +1,0 @@
-mongodb:
-  # Will replace 'host', 'port', 'username' and 'password' with contents of yaml file at given path
-  file: /home/cloud/local/mongodb.yml
-  host: "192.168.0.5"
-  port: 27017
-  database: ""
-  username: ""
-  password: ""
