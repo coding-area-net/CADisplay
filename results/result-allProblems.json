@@ -1,0 +1,57 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "bukkit/src/main/java/net/codingarea/display/tab/CustomTeamsTabDisplay.java",
+      "language": "JAVA",
+      "line": 111,
+      "offset": 14,
+      "length": 15,
+      "code": {
+        "startLine": 109,
+        "length": 15,
+        "offset": 132,
+        "surroundingCode": "\t\t} catch (NoSuchMethodException ignored) {\n\t\t} catch (IllegalAccessException | InvocationTargetException exception) {\n\t\t\texception.printStackTrace();\n\t\t}\n\t}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "bukkit",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "67d95c193269b1a553f66ffc17ff13cfb4c5118b301b99efae36c95595f65071"
+},{
+  "tool": "Code Inspection",
+  "category": "Assignment issues",
+  "type": "Assignment to static field from instance context",
+  "severity": "High",
+  "comment": "Assignment to static field `displayAPI` from instance context",
+  "detailsInfo": "Reports assignment to, or modification of `static` fields from within an instance method.\n\nAlthough legal, such assignments are tricky to do\nsafely and are often a result of marking fields `static` inadvertently.\n\n**Example:**\n\n\n      class Counter {\n        private static int count = 0;\n\n        void increment() {\n          // Warning: updating a static field\n          // from an instance method\n          count++;\n        }\n      }\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "bukkit/src/main/java/net/codingarea/display/DisplayAPI.java",
+      "language": "JAVA",
+      "line": 21,
+      "offset": 3,
+      "length": 10,
+      "code": {
+        "startLine": 19,
+        "length": 10,
+        "offset": 64,
+        "surroundingCode": "\tDisplayAPI(CADisplayPlugin plugin) {\n\t\tthis.plugin = plugin;\n\t\tdisplayAPI = this;\n\t}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "bukkit",
+    "inspectionName": "AssignmentToStaticFieldFromInstanceMethod"
+  },
+  "hash": "34d820a3a427ab976911e6a10e72d710921fae68976fbb512efc12ecd98767c8"
+}]}

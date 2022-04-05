@@ -1,0 +1,166 @@
+{
+  "libraries": [
+    {
+      "name": "Maven: org.spigotmc:spigot-api:1.14.4-R0.1-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.14.4-R0.1-SNAPSHOT/spigot-api-1.14.4-R0.1-20191210.224154-92.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: commons-lang:commons-lang:2.6",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.google.guava:guava:21.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.google.code.gson:gson:2.8.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:bungeecord-chat:1.13-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-chat/1.13-SNAPSHOT/bungeecord-chat-1.13-20190406.085523-69.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.yaml:snakeyaml:1.23",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: de.dytanic.cloudnet:cloudnet-bridge:3.3.0-RELEASE",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/de/dytanic/cloudnet/cloudnet-bridge/3.3.0-RELEASE/cloudnet-bridge-3.3.0-RELEASE.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.jetbrains:annotations:19.0.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/19.0.0/annotations-19.0.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: de.dytanic.cloudnet:cloudnet-wrapper-jvm:3.3.0-RELEASE",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/de/dytanic/cloudnet/cloudnet-wrapper-jvm/3.3.0-RELEASE/cloudnet-wrapper-jvm-3.3.0-RELEASE.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: de.dytanic.cloudnet:cloudnet-driver:3.3.0-RELEASE",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/de/dytanic/cloudnet/cloudnet-driver/3.3.0-RELEASE/cloudnet-driver-3.3.0-RELEASE.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: de.dytanic.cloudnet:cloudnet-common:3.3.0-RELEASE",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/de/dytanic/cloudnet/cloudnet-common/3.3.0-RELEASE/cloudnet-common-3.3.0-RELEASE.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-handler:4.1.36.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-handler/4.1.36.Final/netty-handler-4.1.36.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-common:4.1.36.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.36.Final/netty-common-4.1.36.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-buffer:4.1.36.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-buffer/4.1.36.Final/netty-buffer-4.1.36.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-transport:4.1.36.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.36.Final/netty-transport-4.1.36.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-resolver:4.1.36.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-resolver/4.1.36.Final/netty-resolver-4.1.36.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-codec:4.1.36.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-codec/4.1.36.Final/netty-codec-4.1.36.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-codec-http:4.1.36.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-http/4.1.36.Final/netty-codec-http-4.1.36.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.36.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-epoll/4.1.36.Final/netty-transport-native-epoll-4.1.36.Final-linux-x86_64.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-transport-native-unix-common:4.1.36.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-unix-common/4.1.36.Final/netty-transport-native-unix-common-4.1.36.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-transport-native-kqueue:osx-x86_64:4.1.36.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-kqueue/4.1.36.Final/netty-transport-native-kqueue-4.1.36.Final-osx-x86_64.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: de.dytanic.cloudnet:cloudnet-cloudperms:3.3.0-RELEASE",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/de/dytanic/cloudnet/cloudnet-cloudperms/3.3.0-RELEASE/cloudnet-cloudperms-3.3.0-RELEASE.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.projectlombok:lombok:1.18.22",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.junit.jupiter:junit-jupiter-api:5.8.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.opentest4j:opentest4j:1.2.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.junit.platform:junit-platform-commons:1.8.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.apiguardian:apiguardian-api:1.1.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/"
+      ]
+    }
+  ]
+}

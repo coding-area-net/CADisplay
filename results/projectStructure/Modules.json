@@ -1,0 +1,192 @@
+{
+  "modules": [
+    {
+      "name": "parent",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/target/generated-sources/annotations",
+              "type": "GeneratedSource",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "jbr-11",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Maven: org.projectlombok:lombok:1.18.22",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.junit.jupiter:junit-jupiter-api:5.8.2",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.opentest4j:opentest4j:1.2.0",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.junit.platform:junit-platform-commons:1.8.2",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.apiguardian:apiguardian-api:1.1.2",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "bukkit",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/bukkit",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/bukkit/src/main/java",
+              "type": "Source",
+              "packagePrefix": ""
+            },
+            {
+              "path": "file://$PROJECT_DIR$/bukkit/src/main/resources",
+              "type": "Resource",
+              "packagePrefix": ""
+            },
+            {
+              "path": "file://$PROJECT_DIR$/bukkit/target/generated-sources/annotations",
+              "type": "GeneratedSource",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "jbr-11",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Maven: org.spigotmc:spigot-api:1.14.4-R0.1-SNAPSHOT",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: commons-lang:commons-lang:2.6",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: com.google.guava:guava:21.0",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: com.google.code.gson:gson:2.8.0",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: net.md-5:bungeecord-chat:1.13-SNAPSHOT",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.yaml:snakeyaml:1.23",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: de.dytanic.cloudnet:cloudnet-bridge:3.3.0-RELEASE",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.jetbrains:annotations:19.0.0",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: de.dytanic.cloudnet:cloudnet-wrapper-jvm:3.3.0-RELEASE",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: de.dytanic.cloudnet:cloudnet-driver:3.3.0-RELEASE",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: de.dytanic.cloudnet:cloudnet-common:3.3.0-RELEASE",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: io.netty:netty-handler:4.1.36.Final",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: io.netty:netty-common:4.1.36.Final",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: io.netty:netty-buffer:4.1.36.Final",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: io.netty:netty-transport:4.1.36.Final",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: io.netty:netty-resolver:4.1.36.Final",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: io.netty:netty-codec:4.1.36.Final",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: io.netty:netty-codec-http:4.1.36.Final",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.36.Final",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: io.netty:netty-transport-native-unix-common:4.1.36.Final",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: io.netty:netty-transport-native-kqueue:osx-x86_64:4.1.36.Final",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: de.dytanic.cloudnet:cloudnet-cloudperms:3.3.0-RELEASE",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.projectlombok:lombok:1.18.22",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.junit.jupiter:junit-jupiter-api:5.8.2",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.opentest4j:opentest4j:1.2.0",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.junit.platform:junit-platform-commons:1.8.2",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.apiguardian:apiguardian-api:1.1.2",
+          "type": "Library"
+        }
+      ]
+    }
+  ]
+}
