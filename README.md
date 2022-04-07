@@ -71,6 +71,24 @@ DisplayAPI.getDisplayAPI().setCurrentChatDisplay(new DynamicChatDisplay(player -
 DisplayAPI.getDisplayAPI().setCurrentChatDisplay(new StaticChatDisplay("§8§l┃ %display% §8┃ %color%%name% &8» §7%message%"));
 ```
 
+## Reset back to defaults
+
+To reset the tablist or chat back to default use following methods:
+
+```java
+DisplayAPI.getDisplayAPI().resetTabDisplay();
+DisplayAPI.getDisplayAPI().resetTabDisplay();
+```
+
+## Deactivate custom chat or tab
+
+Setting the displays to null will deactivate it
+
+```java
+DisplayAPI.getDisplayAPI().setCurrentTabDisplay(null);
+DisplayAPI.getDisplayAPI().setCurrentChatDisplay(null);
+```
+
 ## GitFlows
 
 Uses: [gitflow-maven-plugin](https://github.com/aleksandr-m/gitflow-maven-plugin)
