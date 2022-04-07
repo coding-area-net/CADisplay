@@ -77,7 +77,7 @@ To reset the tablist or chat back to default use following methods:
 
 ```java
 DisplayAPI.getDisplayAPI().resetTabDisplay();
-DisplayAPI.getDisplayAPI().resetTabDisplay();
+DisplayAPI.getDisplayAPI().resetChatDisplay();
 ```
 
 ## Deactivate custom chat or tab
