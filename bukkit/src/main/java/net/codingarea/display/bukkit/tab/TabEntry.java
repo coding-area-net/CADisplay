@@ -6,6 +6,9 @@ import de.dytanic.cloudnet.driver.permission.IPermissionUser;
 
 import java.util.UUID;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -14,14 +17,17 @@ import org.jetbrains.annotations.Nullable;
  * @author KxmischesDomi | https://github.com/kxmischesdomi
  * @since 1.0
  */
+@Builder
+@Getter
+@Setter
 public final class TabEntry {
 
 	private String name;
-	private String prefix;
-	private String display;
+	private String prefix = "";
+	private String display = "";
 	private String color;
-	private String suffix;
-	private int sortId;
+	private String suffix = "";
+	private int sortId = 0;
 
 	public TabEntry(String name, @Nullable String prefix, @Nullable String display,
 					@Nullable String color, @Nullable String suffix, int sortId) {
@@ -47,54 +53,6 @@ public final class TabEntry {
 		this.color = group.getColor();
 		this.suffix = group.getSuffix();
 		this.sortId = group.getSortId();
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getPrefix() {
-		return prefix;
-	}
-
-	public String getDisplay() {
-		return display;
-	}
-
-	public String getColor() {
-		return color;
-	}
-
-	public String getSuffix() {
-		return suffix;
-	}
-
-	public int getSortId() {
-		return sortId;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setPrefix(String prefix) {
-		this.prefix = prefix;
-	}
-
-	public void setDisplay(String display) {
-		this.display = display;
-	}
-
-	public void setColor(String color) {
-		this.color = color;
-	}
-
-	public void setSuffix(String suffix) {
-		this.suffix = suffix;
-	}
-
-	public void setSortId(int sortId) {
-		this.sortId = sortId;
 	}
 
 }
