@@ -22,12 +22,6 @@ import java.util.function.Consumer;
  */
 public class TabUpdateListener implements Listener {
 
-	private final JavaPlugin plugin;
-
-	public TabUpdateListener(JavaPlugin plugin) {
-		this.plugin = plugin;
-	}
-
 	private void executeIfSet(Consumer<ITabDisplay> consumer) {
 		ITabDisplay currentTabDisplay = DisplayAPI.getDisplayAPI().getCurrentTabDisplay();
 		if (currentTabDisplay != null) {

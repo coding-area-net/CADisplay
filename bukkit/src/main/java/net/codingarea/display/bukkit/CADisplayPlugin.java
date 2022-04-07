@@ -39,7 +39,7 @@ public class CADisplayPlugin extends JavaPlugin {
 		this.currentTabDisplay = new CloudPermsTabDisplay(this);
 		this.currentChatDisplay = new StaticChatDisplay(configFormat);
 
-		Bukkit.getPluginManager().registerEvents(new TabUpdateListener(this), this);
+		Bukkit.getPluginManager().registerEvents(new TabUpdateListener(), this);
 		Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
 	}
 
