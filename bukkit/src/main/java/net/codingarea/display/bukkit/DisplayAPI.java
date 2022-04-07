@@ -22,6 +22,13 @@ public class DisplayAPI {
 	}
 
 	/**
+	 * @return the default chat format from the plugin config
+	 */
+	public String getDefaultChatFormat() {
+		return plugin.getConfigFormat();
+	}
+
+	/**
 	 * Gets the current chat display instance
 	 */
 	public IChatDisplay getCurrentChatDisplay() {
