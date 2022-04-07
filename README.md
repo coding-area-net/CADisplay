@@ -1,6 +1,75 @@
-# Template
+# CADisplay
 
-Short description about the functionality of the plugin
+CloudNet tablist and chat handler with api to manage
+
+## Setup
+
+Maven:
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>`
+    <dependency>
+        <groupId>com.github.coding-area-net</groupId>
+        <artifactId>CADisplay</artifactId>
+        <version>${VERSION}</version>
+    </dependency>
+</dependencies>
+```
+
+Gradle:
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.coding-area-net:CADisplay:${VERSION}'
+}
+```
+
+## API Examples
+
+### Modify Tablist:
+```java
+DisplayAPI.getDisplayAPI().setCurrentTabDisplay(new CustomTeamsTabDisplay(player -> {
+    Team team = teams.get(player);
+    if (team == null) {
+    	return TabEntry.builder()
+            .name("Spec")
+            .prefix("§r§8┃ §7Spec §8» §7")
+            .build();
+    }
+    
+    return TabEntry.builder() // Builder for scoreboard teams
+        .name(team.getName())
+        .prefix("§8┃ " + team.getColor() + team.getName() + " §8» ")
+        .display(team.getName())
+        .color(team.getColor())
+        .build();
+}));
+```
+
+### Modify Chat Format:
+
+#### Dynamic (Different for every player)
+```java
+DisplayAPI.getDisplayAPI().setCurrentChatDisplay(new DynamicChatDisplay(player -> {
+	Team team = teams.get(player);
+	if (team == null) return DisplayAPI.getDisplayAPI().getDefaultChatFormat();
+	return DisplayAPI.getDisplayAPI().getDefaultChatFormat().replace("%display%", team.getDisplayName()).replace("%color%", team.getColor());
+}));
+```
+
+#### Static (Same for every player)
+```java
+DisplayAPI.getDisplayAPI().setCurrentChatDisplay(new StaticChatDisplay("§8§l┃ %display% §8┃ %color%%name% &8» §7%message%"));
+```
 
 ## GitFlows
 
