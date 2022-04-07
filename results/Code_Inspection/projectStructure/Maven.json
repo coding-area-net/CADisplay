@@ -253,7 +253,7 @@
       "baseVersion": "1.18.22",
       "type": "jar",
       "optional": false,
-      "scope": "provided"
+      "scope": "compile"
     },
     {
       "ideaName": "Maven: org.junit.jupiter:junit-jupiter-api:5.8.2",
@@ -308,7 +308,7 @@
       "baseVersion": "1.18.22",
       "type": "jar",
       "optional": false,
-      "scope": "provided"
+      "scope": "compile"
     },
     {
       "ideaName": "Maven: org.junit.jupiter:junit-jupiter-api:5.8.2",

@@ -1,6 +1,51 @@
 {
   "modules": [
     {
+      "name": "parent",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/target/generated-sources/annotations",
+              "type": "GeneratedSource",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "jbr-11",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Maven: org.projectlombok:lombok:1.18.22",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.junit.jupiter:junit-jupiter-api:5.8.2",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.opentest4j:opentest4j:1.2.0",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.junit.platform:junit-platform-commons:1.8.2",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.apiguardian:apiguardian-api:1.1.2",
+          "type": "Library"
+        }
+      ]
+    },
+    {
       "name": "bukkit",
       "contentEntries": [
         {
@@ -120,51 +165,6 @@
         {
           "name": "Maven: de.dytanic.cloudnet:cloudnet-cloudperms:3.3.0-RELEASE",
           "type": "Library"
-        },
-        {
-          "name": "Maven: org.projectlombok:lombok:1.18.22",
-          "type": "Library"
-        },
-        {
-          "name": "Maven: org.junit.jupiter:junit-jupiter-api:5.8.2",
-          "type": "Library"
-        },
-        {
-          "name": "Maven: org.opentest4j:opentest4j:1.2.0",
-          "type": "Library"
-        },
-        {
-          "name": "Maven: org.junit.platform:junit-platform-commons:1.8.2",
-          "type": "Library"
-        },
-        {
-          "name": "Maven: org.apiguardian:apiguardian-api:1.1.2",
-          "type": "Library"
-        }
-      ]
-    },
-    {
-      "name": "parent",
-      "contentEntries": [
-        {
-          "path": "file://$PROJECT_DIR$",
-          "sourceFolders": [
-            {
-              "path": "file://$PROJECT_DIR$/target/generated-sources/annotations",
-              "type": "GeneratedSource",
-              "packagePrefix": ""
-            }
-          ]
-        }
-      ],
-      "orderEntries": [
-        {
-          "name": "jbr-11",
-          "type": "SDK"
-        },
-        {
-          "name": "<Module source>",
-          "type": "Own sources"
         },
         {
           "name": "Maven: org.projectlombok:lombok:1.18.22",

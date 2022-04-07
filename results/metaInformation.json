@@ -4,6 +4,13 @@
     "Code Inspection": 2
   },
   "attributes": {
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/coding-area-net/CADisplay",
+        "revisionId": "c636cda0a6f58e6d7233bc54e09de4e8281ecdef",
+        "branch": "master"
+      }
+    },
     "deviceId": "200820300000000-9f03-ea84-f724-aaedd605f086"
   }
 }

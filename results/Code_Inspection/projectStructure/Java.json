@@ -1,11 +1,11 @@
 {
   "modules": [
     {
-      "name": "bukkit",
+      "name": "parent",
       "languageLevel": 11
     },
     {
-      "name": "parent",
+      "name": "bukkit",
       "languageLevel": 11
     }
   ]
