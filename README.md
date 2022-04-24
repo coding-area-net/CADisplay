@@ -13,7 +13,7 @@ Maven:
     </repository>
 </repositories>
 
-<dependencies>`
+<dependencies>
     <dependency>
         <groupId>com.github.coding-area-net</groupId>
         <artifactId>CADisplay</artifactId>
