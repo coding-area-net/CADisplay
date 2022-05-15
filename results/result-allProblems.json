@@ -3,7 +3,7 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -31,7 +31,7 @@
   "category": "Assignment issues",
   "type": "Assignment to static field from instance context",
   "severity": "High",
-  "comment": "Assignment to static field `displayAPI` from instance context",
+  "comment": "Assignment to static field 'displayAPI' from instance context",
   "detailsInfo": "Reports assignment to, or modification of `static` fields from within an instance method.\n\nAlthough legal, such assignments are tricky to do\nsafely and are often a result of marking fields `static` inadvertently.\n\n**Example:**\n\n\n      class Counter {\n        private static int count = 0;\n\n        void increment() {\n          // Warning: updating a static field\n          // from an instance method\n          count++;\n        }\n      }\n",
   "sources": [
     {
