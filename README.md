@@ -38,6 +38,7 @@ dependencies {
 ### Modify Tablist:
 ```java
 DisplayAPI.getDisplayAPI().setCurrentTabDisplay(new CustomTeamsTabDisplay(player -> {
+    // Team is not an api class and just an example how an implementation could look like
     Team team = teams.get(player);
     if (team == null) {
     	return TabEntry.builder()
@@ -60,6 +61,7 @@ DisplayAPI.getDisplayAPI().setCurrentTabDisplay(new CustomTeamsTabDisplay(player
 #### Dynamic (Different for every player)
 ```java
 DisplayAPI.getDisplayAPI().setCurrentChatDisplay(new DynamicChatDisplay(player -> {
+        // Team is not an api class and just an example how an implementation could look like
 	Team team = teams.get(player);
 	if (team == null) return DisplayAPI.getDisplayAPI().getDefaultChatFormat();
 	return DisplayAPI.getDisplayAPI().getDefaultChatFormat().replace("%display%", team.getDisplayName()).replace("%color%", team.getColor());
